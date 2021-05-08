@@ -27,44 +27,55 @@
     </header>
 
     <section class="newest">
-      <h2>Новинки</h2>
-      <div class="product">
-        <h3 class="product-name">Вахтёр</h3>
-        <table class="product-params">
-          <tr>
-            <td>Алк.</td>
-            <td>&lt; 1%</td>
-          </tr>
-          <tr>
-            <td>Ккал</td>
-            <td>35</td>
-          </tr>
-        </table>
-        <p class="product-composition">Ржаной хлеб, Вода, Солод, Соль</p>
-        <img src="img/bottle-left.jpg">
-        <p class="product-description">Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!</p>
-        <a class="product-" href="">Подробнее</a>
-        <a class="product-" href="">Купить</a>
-        <b>150 Р.</b>
-      </div>
-      <div class="product">
-        <h3 class="product-name">Романтик</h3>
-        <table class="product-params">
-          <tr>
-            <td>Алк.</td>
-            <td>&lt; 0,5%</td>
-          </tr>
-          <tr>
-            <td>Ккал</td>
-            <td>27</td>
-          </tr>
-        </table>
-        <p class="product-composition">Ячменный хлеб, Вода, Солод, Апельсин</p>
-        <img src="img/bottle-left.jpg">
-        <p class="product-description">Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.</p>
-        <a class="product-" href="">Подробнее</a>
-        <a class="product-" href="">Купить</a>
-        <b>90 Р.</b>
+      <div class="wrapper clearfix">
+        <h2>Новинки</h2>
+        <div class="product-both clearfix">
+
+          <div class="product product-left">
+            <h3 class="product-name">Вахтёр</h3>
+            <table class="product-params">
+              <tr>
+                <td>Алк.</td>
+                <td>&lt; 1%</td>
+              </tr>
+              <tr>
+                <td>Ккал</td>
+                <td>35</td>
+              </tr>
+            </table>
+            <p class="product-composition">Ржаной хлеб, Вода, Солод, Соль</p>
+            <img src="img/bottle-left.jpg">
+            <p class="product-description">Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений!</p>
+            <div class="buttons">
+              <a class="button button-product-more" href="#">Подробнее</a>
+              <a class="button button-product-buy" href="#">Купить</a>
+              <b class="product-coast">150 Р.</b>
+            </div>
+          </div>
+
+          <div class="product product-right">
+            <h3 class="product-name">Романтик</h3>
+            <table class="product-params">
+              <tr>
+                <td>Алк.</td>
+                <td>&lt; 0,5%</td>
+              </tr>
+              <tr>
+                <td>Ккал</td>
+                <td>27</td>
+              </tr>
+            </table>
+            <p class="product-composition">Ячменный хлеб, Вода, Солод, Апельсин</p>
+            <img src="img/bottle-right.jpg">
+            <p class="product-description">Лёгкий и освежающий напиток поможет сохранять отличное настроение в течение всего дня.</p>
+            <div class="buttons">
+              <a class="button button-product-more" href="#">Подробнее</a>
+              <a class="button button-product-buy" href="#">Купить</a>
+              <b class="product-coast">90 Р.</b>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -194,7 +205,7 @@
         </select>
         <br>
         <label for="comment">Доп. комментарий:</label>
-        <textarea id="comment" cols="30" rows="2"></textarea>
+        <textarea id="comment" cols="20" rows="2"></textarea>
         <br>
         <input type="checkbox" id="agree" checked>
         <label for="agree">Я согласен получать квасную рассылку</label>
@@ -221,8 +232,7 @@
       <p>
         При перепечатке материалов ссылка на сайт обязательна!
       </p>
-      <img src="img/htmlacademy.png">
-      <span><b>Разработчик:</b> <a href="#">HTML Academy</a></span>
+      <img src="img/htmlacademy.png"><span><b>Разработчик:</b> <a href="#">HTML Academy</a></span>
     </footer>
 
   </body>

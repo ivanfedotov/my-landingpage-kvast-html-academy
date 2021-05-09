@@ -1,8 +1,11 @@
-/* Общие стили */
+/* ОБЩИЕ СТИЛИ */
 body {
     font-family: Arial, sans-serif;
 }
-body, header, section, footer, nav, div, img, ul, li, p, h1, h2, h3, table, tr, th, td, a {
+body, header, section, footer, nav, div, 
+img, ul, li, p, h1, h2, h3, a, 
+table, tr, th, td, 
+dl, dt, dd, blockquote, cite {
     margin: 0;
     padding: 0; 
 }
@@ -11,11 +14,23 @@ body, header, section, footer, nav, div, img, ul, li, p, h1, h2, h3, table, tr, 
     margin: 0 auto;
     /* border: 2px dotted #ff0000; */
 }
+.wrapper-big {
+    width: 1015px;
+    margin: 0 auto;
+    /* border: 2px dotted #ff0000; */
+}
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
-  }
+}
+.section-title {
+    height: 60px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 61px;
+    text-transform: uppercase;
+}
 
 /* БЛОК 1 - "ШАПКА" */
 header {
@@ -69,25 +84,18 @@ header .slogan {
     margin-top: 120px;
     color: #ffffff;
     font-size: 70px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 70px;
     text-align: center;
 }
 
-/* БЛОК 2 - "Новинки" */
+/* БЛОК 2 - "НОВИНКИ" */
 .newest {
     padding-top: 80px;
+    margin-bottom: 110px;
 }
-.newest h2 {
-    height: 60px;
+.newest .section-title {
     margin-bottom: 75px;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 61px;
-    text-transform: uppercase;
-}
-.product-both {
-
 }
 .product {
     position: relative;
@@ -182,4 +190,158 @@ header .slogan {
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+}
+
+/* БЛОК 3 - "ПРЕИМУЩЕСТВА" */
+.advantages {
+    background-color: #ffcb78;
+    /* margin-top: 110px; */
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.advantages ul {
+    list-style-type: none;
+}
+.advantages-item {
+    display: block;
+    padding-top: 100px;
+    float: left;
+    width: 210px;
+    padding-left: 95px;
+    padding-right: 95px;
+    border-right: 1px solid #e5b66c;
+}
+.advantages-item:first-child {
+    padding-left: 0;
+}
+.advantages-item:last-child {
+    margin-right: 2px;
+    padding-right: 0;
+    border-right: 0;
+}
+.advantages-item::before {
+    content: '';
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 0;
+    background: url("../img/icons-advantages.png") no-repeat;
+}
+.icon-brew::before {
+    width: 50px;
+    height: 68px;
+    background-position: 0 0;
+}
+.icon-matreshka::before {
+    width: 46px;
+    height: 65px;
+    background-position: 0 -68px;
+}
+.icon-thumbsup::before {
+    width: 63px;
+    height: 58px;
+    background-position: 0 -133px;
+}
+.advantages-title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    text-transform: uppercase;
+}
+.advantages-description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+
+/* БЛОК 4 - "НЕМНОГО ИСТОРИИ" */
+.history {
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+.history .section-title {
+    margin-bottom: 60px;
+}
+.history-item {
+    display: block;
+    position: relative;
+    padding-bottom: 60px;
+}
+.history-item:last-child {
+    padding-bottom: 0;
+}
+.history-item-title {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+}
+.history-item-link {
+    position: absolute;
+    right: 0.74px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.history-item-link a {
+    color: #834700;
+}
+.history-item dd {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+.history-item dd p {
+    width: 490px;
+    /* border: 1px solid #000; */
+}
+.history-item dd img {
+    float: right;
+    margin-top: 10px;
+}
+
+/* БЛОК 5 - "ПРЕССА О НАС" */
+.press {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background-color: #ede5d8;
+}
+.press-blockquote {
+    position: relative;
+    margin-top: 75px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+.press-blockquote p {
+    width: 690px;
+}
+.press-blockquote p::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -105px;
+    width: 41px;
+    height: 31px;
+    background-image: url("../img/quotes.png");
+}
+.button-press-more {
+    float: left;
+    margin-top: 35px;
+    padding: 13px 20px;
+    color: #bcb6ab;
+    border-color: #a5a097;
+}
+.press-cite {
+    float: right;
+    margin-top: 45px;
+    padding-right: 1.36px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000000;
 }
